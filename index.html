@@ -3,12 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<title>Hello World</title>
-    <script src="js/react.js"></script>
-    <script src="js/react-dom.js"></script>
-    <script src="js/browser.min.js"></script>
-    <script src="js/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
   </head>
   <body>
 	<header>
@@ -17,79 +12,74 @@
 			</a>
 			<ul id="links">
 				<li><a href="https://github.com/Exbbb123/">Github</a></li>
-				<li><a id="Wechat" href="javascript:void(0);">Wechat</a></li>
-				<li><a href="javascript:void(0);" title='15858557799'>Phone</a></li>
+				<li><a id="wechat" href="javascript:void(0);">Wechat</a></li>
+				<li><a 
+					href="javascript:void(0);" 
+					title='15858557799'>Phone</a></li>
 			</ul>
 		</div>
 	</header>
 	
 	<main>
 		<div id="mid">
-			<h1>沉溺学习，无法自拔</h1>
-			<p>
+			<h1>生如夏花</h1>
+			<p id='subtitle'>
 				<a href="javascript:void(0);">HTML&nbsp;</a>/
 				<a href="javascript:void(0);">&nbsp;CSS&nbsp;</a>/
 				<a href="javascript:void(0);">&nbsp;JAVASCRIPT&nbsp;</a>
 			</p>
 			<ul id = "content">
 				<li>
-					<span><a href="javascript:void(0);"><img src="pics/wanted.jpg"></a></span>
-					<p>张特，应届毕业生</br>
-					<a>为什么想做前端??</a></br>
-					答：因为前端薪水高，因为前端入门容易，因为Linux学的我脑袋疼，因为想接触点设计</p>
+					<span>
+						<a href="javascript:void(0);">
+							<img src="pics/wanted.jpg">
+						</a>
+					</span>
+					<p>张 特</br>
+					<a>探索前端中……</a></br>
+					</p>
 				</li>
 				<li>
-					<span><a href="javascript:void(0);"><img src="pics/jlu.jpg"></a></span>
-					<p><a>毕业院校：</a>JLU</br></br><a>专业：</a>地质学</p>
+					<span>
+						<a href="javascript:void(0);">
+							<img src="pics/jlu.jpg">
+						</a>
+					</span>
+					<p><a>毕业院校：</a>JLU</br>
 				</li>
 				<li>
-					<span><a href="javascript:void(0);"><img src="pics/birth.jpg"></a></span>
+					<span>
+						<a href="javascript:void(0);">
+							<img src="pics/birth.jpg">
+						</a>
+					</span>
 					<p><a>Apr. 17 ,1995 , Wenzhou</a></p>
 				</li>
 				<li>
-					<span><a href="javascript:void(0);"><img src="pics/hangzhou.jpg"></a></span>
+					<span>
+						<a href="javascript:void(0);">
+							<img src="pics/hangzhou.jpg">
+						</a>
+					</span>
 					<p><a>Feb. 28 , 2017 , Hangzhou</a></br></br>—— 最后一个学期开始。从下沙市民中心搭巴士去萧山机场。</p>
 				</li>
 				<li>
-					<span><a href="javascript:void(0);"><img src="pics/changchun.jpg"></a></span>
+					<span>
+						<a href="javascript:void(0);">
+							<img src="pics/changchun.jpg">
+						</a>
+					</span>
 					<p><a>Mar. 30 ,2017 ,Changchun</a></br></br>—— 记大学最后一堂课</p>
 				</li>
 			</ul>
-			<p id="more"><a>To be continued ...</a></p>
 		</div>
 	</main>
 	<footer id="footer">
+		<p>
+			Copyright © 2018 zzzT.  All Rights Reserved.
+		</p>
 	</footer>
-	<script type="text/javascript">
-		$(function(){
-
-			$("#Wechat").mouseover(function(e){
-				this.title = "";	
-				var tooltip = "<div id='tooltip'><img src='pics/qr.png' alt='QR code'/><\/div>"; 
-				$("header").append(tooltip); 
-				$("#tooltip")
-					.css({
-						'position' :'fixed',
-						'right':'35px',
-						'top':'88px',
-						"z-index": "3"
-					}).show("fast");
-			}).mouseout(function(){
-				$("#tooltip").remove();	
-			})
-					})
-	</script>
-	<script type="text/babel">
-
-		ReactDOM.render (
-			<p>
-			Copyright © 2017 zzzT.  All Rights Reserved. （——假装自己学会了React）
-			</p>,
-			document.getElementById('footer')
-			);
-			
-    </script>
-
+	<script src="js/showPic.js"></script>
 	<link rel="stylesheet" type="text/css" src="styles/main.css">
   </body>
 </html>
